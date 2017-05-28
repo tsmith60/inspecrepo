@@ -11,7 +11,7 @@
                      #echo $cmd
                     #echo "There is a failure"
                     cmd="Inspec Policy #$COUNT: \n"$( inspec exec $TEMP )
-                    echo $cmd >> /home/centos/failreport.txt
+                    echo -e $cmd >> /home/centos/failreport.txt
                     #logger "CMD2: "$cmd
                         else
                 #Basically means if there is a success, execute below
