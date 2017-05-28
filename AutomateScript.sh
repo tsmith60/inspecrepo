@@ -2,7 +2,7 @@
 
       COUNT=1
          while [  $COUNT -lt 3 ]; do
-        TEMP="/centosInspec/"$COUNT"_spec.rb";
+        TEMP="/inspecrepo/"$COUNT"_spec.rb";
          cmd=$(inspec exec $TEMP | grep "1 failures")
          logger "Temp: "$TEMP
          #logger "CMD: "$cmd
