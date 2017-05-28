@@ -1,0 +1,12 @@
+#!/bin/bash
+curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O
+chmod +x ./awslogs-agent-setup.py
+./awslogs-agent-setup.py -n -r us-east-1 -c s3://bankingtest123/awslogger.cnf
+logger Hey this is a test Centos
+curl -o inspec.rpm https://packages.chef.io/files/stable/inspec/1.7.1/el/7/inspec-1.7.1-1.el7.x86_64.rpm
+rpm -Uvh inspec.rpm 
+yum install git -y
+git clone https://github.com/tsmith1119s/centosInspec.git
+bash /centosInspec/AutomateScript.sh
+bash /centosInspec/AutomateScript.sh
+#Launch script that should be placed in user data
