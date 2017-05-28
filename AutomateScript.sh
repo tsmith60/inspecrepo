@@ -10,7 +10,7 @@
                     #Basically means if there is a failure, execute below
                      #echo $cmd
                     #echo "There is a failure"
-                    cmd="Inspec Policy #$COUNT: \n"$( inspec exec $TEMP )
+                    cmd="Inspec Policy #$COUNT: \n"$( inspec exec $TEMP )"\n\n"
                     echo -e $cmd >> /home/centos/failreport.txt
                     #logger "CMD2: "$cmd
                         else
