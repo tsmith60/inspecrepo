@@ -28,7 +28,7 @@ if [ -n "$report" ]; then
                     #Basically means if the fail report was created, execute below
                      echo "Report found"
                    logger Report inspec failures on system $( hostname)
-                   sudo shutdown -h now
+                   sudo shutdown -h
                         else
                 #Basically means if there is a success, execute below
                     echo "All Successful"
